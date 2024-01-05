@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login ● Instagram</title>
-    <link type="image/png" sizes="16x16" rel="icon" href="/iconinstagram.png">
+    <link type="image/png" sizes="16x16" rel="icon" href="../Instagram-Login/Instaimg/iconinstagram.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <style>
         *{
             margin: 0;
@@ -76,7 +77,7 @@
         }
 
         .face{
-            margin: 0px 10px 0px 0px;
+            margin: 10px 10px 0px 0px;
             padding: 0;
             width: 20px;
             height: 30px;
@@ -105,6 +106,10 @@
             margin-top: 20px;
         }
 
+        .play{
+            height: 45px;  
+        }
+
         img{
             width: 130px;
             height: 50px;
@@ -117,19 +122,19 @@
         }
 
         footer{
-            position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
             text-align: center;
             margin: 20px 0px;
             font-size: 15px;
+            position: absolute;
         }
 
         .copy{
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin: 20px;
         }
 
         .copy p{
@@ -161,12 +166,12 @@
     <div class="container">
         <div class="logintop">
             <div class="login">
-                    <h1><img src="/instagram.png" alt=""></h1>
+                    <h1><img src="/Instagram-clone/Instagram-Login/Instaimg/instagram.png" alt=""></h1>
                     <input type="text" placeholder="Phone number, username or email"><br>
                     <input type="password" placeholder="Password"><br>
                     <input class="loginbtn" type="submit" value="Log in">
                     <div class="orline">or</div>
-                    <div class="facebook"><img src="/square-facebook.svg" class="face"><a class="link" href="#">Login with Facebook</a></div><br>
+                    <div class="facebook"><i class="fa-brands fa-square-facebook face"></i><a class="link" href="#">Login with Facebook</a></div><br>
                     <div><a class="link" href="#">Forgot password?</a></div>
             </div>
             <div class="signup">
@@ -175,12 +180,13 @@
             <div class="apps">
                 <p>Get the app.</p>
                 <div class="imgapp">
-                    <img src="/playstore.png" alt="">
-                    <img src="/micro.png" alt="">
+                    <img  src="./Instaimg/playstore.png" alt="">
+                    <img class="play" src="./Instaimg/micro.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+    <div>
     <footer>
         <div>
             <a href="#" class="link color">Meta</a>
@@ -206,5 +212,6 @@
             <p>© 2024 Instagram from Meta</p>
         </div>
     </footer>
+    </div>
 </body>
 </html>
