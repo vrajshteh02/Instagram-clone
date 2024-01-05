@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ● Instagram</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="/iconinstagram.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            height: 100%;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            font-size: 100%;
+        }
+
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }
+
+        .logintop{
+            margin: 0 auto;
+        }
+
+        .login{
+            padding: 20px;
+            border: 1px solid rgb(215, 206, 206);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 img{
+            margin: 0;
+            height: 90px;
+        }
+
+        input{
+            width: 80%;
+            padding: 9px 0px 7px 8px; 
+            margin: 10px 0px;
+        }
+
+
+        .loginbtn{
+            background-color: blueviolet;
+            color: white;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .orline{
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .facebook{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .face{
+            margin: 0px 10px 0px 0px;
+            padding: 0;
+            width: 20px;
+            height: 30px;
+            
+        }
+
+        .facebook a{
+            color: #385185;
+            font-weight:bold;
+        }
+
+        .link{
+            text-decoration: none;
+        }
+
+        .signup{
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid rgb(215, 206, 206);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .apps{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img{
+            width: 130px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .color{
+            color: rgb(144, 126, 126);
+            margin: 0px 5px;
+        }
+
+        footer{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 15px;
+        }
+
+        .copy{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .copy p{
+            margin-left: 20px;
+            color: rgb(144, 126, 126);
+            text-wrap: nowrap;
+        }
+
+        @media only screen and (max-height:700px){
+            footer{
+                position: relative;
+            }
+            .container{
+                height: 100vh;
+            }
+
+        }
+
+        @media only screen and (max-width:360px){
+            .login, .signup{
+                border: 0;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logintop">
+            <div class="login">
+                    <h1><img src="/instagram.png" alt=""></h1>
+                    <input type="text" placeholder="Phone number, username or email"><br>
+                    <input type="password" placeholder="Password"><br>
+                    <input class="loginbtn" type="submit" value="Log in">
+                    <div class="orline">or</div>
+                    <div class="facebook"><img src="/square-facebook.svg" class="face"><a class="link" href="#">Login with Facebook</a></div><br>
+                    <div><a class="link" href="#">Forgot password?</a></div>
+            </div>
+            <div class="signup">
+                <p>Don't have an account? <a class="link" href="#">Sign up</a></p>
+            </div>
+            <div class="apps">
+                <p>Get the app.</p>
+                <div class="imgapp">
+                    <img src="/playstore.png" alt="">
+                    <img src="/micro.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="#" class="link color">Meta</a>
+            <a href="#" class="link color">About</a>
+            <a href="#" class="link color">Blog</a>
+            <a href="#" class="link color">Jobs</a>
+            <a href="#" class="link color">Help</a>
+            <a href="#" class="link color">Privacy</a>
+            <a href="#" class="link color">Terms</a>
+            <a href="#" class="link color">Locations</a>
+            <a href="#" class="link color">API</a>
+        </div>
+        <div class="copy">
+            <select name="language" id="language">
+                <option value="English">English</option>
+                <option value="English">Hindi</option>
+                <option value="English">Gujarati</option>
+                <option value="English">Marathi</option>
+                <option value="English">Tamil</option>
+                <option value="English">Telugu</option>
+                <option value="English">French</option>
+            </select>
+            <p>© 2024 Instagram from Meta</p>
+        </div>
+    </footer>
+</body>
+</html>
